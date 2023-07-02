@@ -1,1 +1,807 @@
-{"swagger":"2.0","info":{"description":"数据存储共享模块，数据库外部接口","version":"v1.0","title":"物流信息分析系统","contact":{"name":"码上花心思","url":"https://www.fjnu.edu.cn/联系人访问链接","email":"1342456515@qq.com"},"license":{}},"host":"localhost:8080","basePath":"/","tags":[{"name":"order-controller","description":"Order Controller"},{"name":"port-controller","description":"Port Controller"}],"paths":{"/Dameng/list":{"get":{"tags":["port-controller"],"summary":"获取列表","operationId":"GetListUsingGET_1","produces":["*/*"],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/":{"post":{"tags":["order-controller"],"summary":"AddEmploy","operationId":"AddEmployUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"in":"body","name":"req","description":"req","required":true,"schema":{"$ref":"#/definitions/EmployForm"}}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/Deletehotel/{hotelid}":{"get":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingGET","produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false},"head":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingHEAD","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"204":{"description":"No Content"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"}},"deprecated":false},"post":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false},"put":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingPUT","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false},"delete":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingDELETE","produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"204":{"description":"No Content"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"}},"deprecated":false},"options":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingOPTIONS","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"204":{"description":"No Content"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"}},"deprecated":false},"patch":{"tags":["order-controller"],"summary":"Deletehotel","operationId":"DeletehotelUsingPATCH","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotelid","in":"path","description":"hotelid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"204":{"description":"No Content"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"}},"deprecated":false}},"/Order/InsertEmploy":{"post":{"tags":["order-controller"],"summary":"InsertEmploy","operationId":"InsertEmployUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotel","in":"query","description":"hotel","required":true,"type":"object"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/Search":{"get":{"tags":["order-controller"],"summary":"Searchhotel","operationId":"SearchhotelUsingGET","produces":["application/json;charset=UTF-8"],"parameters":[{"name":"keyword","in":"query","description":"keyword","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/UdpatetEmploy":{"post":{"tags":["order-controller"],"summary":"UdpatetEmploy","operationId":"UdpatetEmployUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"hotel","in":"query","description":"hotel","required":true,"type":"object"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/changecheck":{"post":{"tags":["order-controller"],"summary":"更新复选选择","operationId":"UpdateEmploycheckUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"mycheckhotels","in":"query","description":"mycheckhotels","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/changeselect":{"post":{"tags":["order-controller"],"summary":"更新单项选择","operationId":"UpdateEmployselectUsingPOST","consumes":["application/json"],"produces":["*/*"],"parameters":[{"name":"mySelected","in":"query","description":"mySelected","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"201":{"description":"Created"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/hotel":{"get":{"tags":["order-controller"],"summary":"获取酒店列表","operationId":"GetHotelListUsingGET","produces":["*/*"],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/order":{"get":{"tags":["order-controller"],"summary":"获取订单列表","operationId":"GetListUsingGET","produces":["*/*"],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false}},"/Order/{orderid}":{"get":{"tags":["order-controller"],"summary":"GetOrder","operationId":"GetOrderUsingGET","produces":["*/*"],"parameters":[{"name":"orderid","in":"path","description":"orderid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"},"404":{"description":"Not Found"}},"deprecated":false},"delete":{"tags":["order-controller"],"summary":"DeleteOrder","operationId":"DeleteOrderUsingDELETE","produces":["*/*"],"parameters":[{"name":"orderid","in":"path","description":"orderid","required":true,"type":"string"}],"responses":{"200":{"description":"OK","schema":{"type":"object","additionalProperties":{"type":"object"}}},"204":{"description":"No Content"},"401":{"description":"Unauthorized"},"403":{"description":"Forbidden"}},"deprecated":false}}},"definitions":{"EmployForm":{"type":"object","properties":{"title":{"type":"string"}},"title":"EmployForm"}}}
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "数据存储共享模块，数据库外部接口",
+    "version": "v1.0",
+    "title": "物流信息分析系统",
+    "contact": {
+      "name": "码上花心思",
+      "url": "https://www.fjnu.edu.cn/联系人访问链接",
+      "email": "1342456515@qq.com"
+    },
+    "license": {}
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "order-controller",
+      "description": "Order Controller"
+    },
+    {
+      "name": "port-controller",
+      "description": "Port Controller"
+    }
+  ],
+  "paths": {
+    "/Dameng/list": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "获取列表",
+        "operationId": "GetListUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/": {
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "AddEmploy",
+        "operationId": "AddEmployUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "req",
+            "description": "req",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EmployForm"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/Deletehotel/{hotelid}": {
+      "get": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "head": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingHEAD",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "put": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "delete": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "options": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingOPTIONS",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "patch": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Deletehotel",
+        "operationId": "DeletehotelUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotelid",
+            "in": "path",
+            "description": "hotelid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/InsertEmploy": {
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "InsertEmploy",
+        "operationId": "InsertEmployUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotel",
+            "in": "query",
+            "description": "hotel",
+            "required": true,
+            "type": "object"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/Search": {
+      "get": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "Searchhotel",
+        "operationId": "SearchhotelUsingGET",
+        "produces": [
+          "application/json;charset=UTF-8"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "keyword",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/UdpatetEmploy": {
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "UdpatetEmploy",
+        "operationId": "UdpatetEmployUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "hotel",
+            "in": "query",
+            "description": "hotel",
+            "required": true,
+            "type": "object"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/changecheck": {
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "更新复选选择",
+        "operationId": "UpdateEmploycheckUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "mycheckhotels",
+            "in": "query",
+            "description": "mycheckhotels",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/changeselect": {
+      "post": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "更新单项选择",
+        "operationId": "UpdateEmployselectUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "mySelected",
+            "in": "query",
+            "description": "mySelected",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/hotel": {
+      "get": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "获取酒店列表",
+        "operationId": "GetHotelListUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/order": {
+      "get": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "获取订单列表",
+        "operationId": "GetListUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Order/{orderid}": {
+      "get": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "GetOrder",
+        "operationId": "GetOrderUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "orderid",
+            "in": "path",
+            "description": "orderid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "delete": {
+        "tags": [
+          "order-controller"
+        ],
+        "summary": "DeleteOrder",
+        "operationId": "DeleteOrderUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "orderid",
+            "in": "path",
+            "description": "orderid",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "EmployForm": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        }
+      },
+      "title": "EmployForm"
+    }
+  }
+}
