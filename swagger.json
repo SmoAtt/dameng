@@ -1,0 +1,420 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "数据存储共享模块，数据库外部接口",
+    "version": "v1.0",
+    "title": "物流信息分析系统",
+    "contact": {
+      "name": "码上花心思",
+      "url": "https://www.fjnu.edu.cn/联系人访问链接",
+      "email": "1342456515@qq.com"
+    },
+    "license": {}
+  },
+  "host": "smoatt.github.io",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "port-controller",
+      "description": "Port Controller"
+    }
+  ],
+  "paths": {
+    "/Dameng/ALLPORTNUMB": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口吞吐量",
+        "operationId": "GetALLPORTNUMBUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/ALLPORTSTARTCOUNT": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口作业开始计数表",
+        "operationId": "GetALLPORTSTARTCOUNTUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/ALLPORTSTOPCOUNT": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口作业结束计数表",
+        "operationId": "GetALLPORTSTOPCOUNTUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/BOXSIZELOGISTICSDYNAMICS": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口集装箱尺寸吞吐量",
+        "operationId": "GetBOXSIZELOGISTICSDYNAMICSUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/GOODS_TIMEDIFF": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各商品货运数据",
+        "operationId": "GetGOODS_TIMEDIFFUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/GOODS_TIMEDIFF_ONE": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各商品货运数据",
+        "operationId": "GetGOODS_TIMEDIFF_ONEUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/INCOMINGSHIPS_TAICANG_DAY_AUGUST": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "太仓港每日货运数据",
+        "operationId": "GetINCOMINGSHIPS_TAICANG_DAY_AUGUSTUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/JIDU21_SHIPCOMPANYNUMB": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "21年各季度货运公司数据",
+        "operationId": "GetJIDU21_SHIPCOMPANYNUMBUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/JIDU22_SHIPCOMPANYNUMB": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "22年各季度货运公司数据",
+        "operationId": "GetJIDU22_SHIPCOMPANYNUMBUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/MONTH_ALLGOODSNAMEWEIGHT": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口商品货运详情",
+        "operationId": "GetMONTH_ALLGOODSNAMEWEIGHTUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/MONTH_ALLSHIPCOMPANYNUMB": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各船运公司于各港口的货运数据",
+        "operationId": "GetMONTH_ALLSHIPCOMPANYNUMBUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/Dameng/PIV_GOODNAME": {
+      "get": {
+        "tags": [
+          "port-controller"
+        ],
+        "summary": "各港口的商品货运详情",
+        "operationId": "GetPIV_GOODNAMEUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  }
+}
