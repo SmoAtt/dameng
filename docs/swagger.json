@@ -11,7 +11,7 @@
     },
     "license": {}
   },
-  "host": "smoatt.github.io",
+  "host": "localhost:8080",
   "basePath": "/",
   "tags": [
     {
