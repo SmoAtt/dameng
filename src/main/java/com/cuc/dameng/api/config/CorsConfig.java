@@ -2,6 +2,7 @@ package com.cuc.dameng.api.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
@@ -21,5 +22,14 @@ public class CorsConfig extends WebMvcConfigurationSupport {
                 //  如：“http://www.aaa.com”，只有该域名可以访问我们的跨域资源。
                 .allowedHeaders("*"); // 允许所有的请求header访问，可以自定义设置任意请求头信息。
         super.addCorsMappings(registry);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+
     }
 }
