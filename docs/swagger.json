@@ -12,7 +12,7 @@
     "license": {}
   },
   "host": "localhost:8080",
-  "basePath": "/",
+  "basePath": "",
   "tags": [
     {
       "name": "port-controller",
